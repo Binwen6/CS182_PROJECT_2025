@@ -1,6 +1,9 @@
 # In-Context Learning with Mamba and Baselines
 
+> This is a README for ICL_mamba, and other model dirs follow the suit.
+
 This repository contains code for experiments on in-context learning using Mamba and various baseline models. The codebase is organized for easy extension and reproducibility.
+
 
 ## Code Structure
 ```
