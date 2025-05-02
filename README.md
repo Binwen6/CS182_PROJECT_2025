@@ -71,7 +71,9 @@ bash simple_functions/src/experiments.sh
 ### Evaluation
 
 To download the pretrained model checkpoints:
-https://drive.google.com/file/d/1AaclHMwRryNxXCiyupcUwQKJy9-EhMiN/view?usp=sharing
+- Flash attention：https://drive.google.com/drive/folders/1tuWXcO4a1ysc5IPQdKOJ4qjnNyMhGEIl?usp=sharing
+- Hyena：https://drive.google.com/drive/folders/1ooZxblVUz6Bf0dj_DUd64FAgQJfdlx-A?usp=drive_link
+- Mamba：https://drive.google.com/file/d/1AaclHMwRryNxXCiyupcUwQKJy9-EhMiN/view?usp=sharing
 
 To evaluate a trained model, use:
 ```bash
