@@ -5,7 +5,7 @@ This repository contains code for experiments on in-context learning using Mamba
 ## Code Structure
 ```
 .
-├── simple_functions/
+├── ICL_mamba/
 │ ├── imgs/ # Generated figures and plots
 │ ├── models/ # Saved model checkpoints and experiment outputs
 │ ├── src/ # Main source code for training, evaluation, and utilities
@@ -35,12 +35,12 @@ This repository contains code for experiments on in-context learning using Mamba
 2. **Set up the Python environment:**
    - Using Conda (recommended):
      ```bash
-     conda env create -f simple_functions/environment_default.yml
+     conda env create -f ICL_mamba/environment_default.yml
      conda activate in-context-learning
      ```
    - Or install dependencies via pip:
      ```bash
-     pip install -r simple_functions/requirements.txt
+     pip install -r ICL_mamba/requirements.txt
      ```
 
 3. **Install the modified Mamba module:**
@@ -56,16 +56,16 @@ This repository contains code for experiments on in-context learning using Mamba
 
 To train a model, run the training script with a configuration file. For example:
 ```bash
-cd simple_functions/src
+cd ICL_mamba/src
 python train.py --config conf/gaussian_kernel_regression_mamba.yaml --training.seed 1
 ```
-- Configuration files for different tasks and models are in `simple_functions/src/conf/`.
+- Configuration files for different tasks and models are in `ICL_mamba/src/conf/`.
 
 ### Batch Experiments
 
 You can run multiple experiments using the provided shell script:
 ```bash
-bash simple_functions/src/experiments.sh
+bash ICL_mamba/src/experiments.sh
 ```
 
 ### Evaluation
@@ -86,7 +86,7 @@ python eval.py <run_dir> <run_id> <n_test_points>
 1. **Prepare the environment** as described above.
 2. **Run training** for your desired configuration(s).
 3. **Evaluate** the results using the evaluation script.
-4. **Plots and figures** will be saved in `simple_functions/imgs/`.
+4. **Plots and figures** will be saved in `ICL_mamba/imgs/`.
 
 ## Notes
 
@@ -95,4 +95,4 @@ python eval.py <run_dir> <run_id> <n_test_points>
 
 ---
 
-**License:** See `simple_functions/LICENSE` for details.
+**License:** See `ICL_mamba/LICENSE` for details.

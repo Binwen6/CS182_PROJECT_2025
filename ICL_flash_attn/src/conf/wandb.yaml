@@ -1,0 +1,5 @@
+wandb:
+    project: icl
+    entity: xupeiyu0827-shanghai-jiao-tong-university
+    notes:
+    log_every_steps: 100

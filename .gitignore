@@ -19,18 +19,18 @@ venv/
 Thumbs.db
 
 # Model checkpoints and large outputs
-simple_functions/models/**/*.pt
-simple_functions/models/**/*.pth
-simple_functions/models/**/*.ckpt
-simple_functions/models/**/state.pt
-simple_functions/models/**/metrics.json
-simple_functions/models/**/wandb/
-simple_functions/models/**/*.log
-simple_functions/models/**/*.yaml
+ICL_mamba/models/**/*.pt
+ICL_mamba/models/**/*.pth
+ICL_mamba/models/**/*.ckpt
+ICL_mamba/models/**/state.pt
+ICL_mamba/models/**/metrics.json
+ICL_mamba/models/**/wandb/
+ICL_mamba/models/**/*.log
+ICL_mamba/models/**/*.yaml
 
 # Experiment outputs
-simple_functions/imgs/
-simple_functions/src/__pycache__/
+ICL_mamba/imgs/
+ICL_mamba/src/__pycache__/
 
 # Wandb logs
 wandb/
