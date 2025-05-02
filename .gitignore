@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+.venv
+env/
+venv/
+*.egg-info/
+*.egg
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model checkpoints and large outputs
+simple_functions/models/**/*.pt
+simple_functions/models/**/*.pth
+simple_functions/models/**/*.ckpt
+simple_functions/models/**/state.pt
+simple_functions/models/**/metrics.json
+simple_functions/models/**/wandb/
+simple_functions/models/**/*.log
+simple_functions/models/**/*.yaml
+
+# Experiment outputs
+simple_functions/imgs/
+simple_functions/src/__pycache__/
+simple_functions/src/*.ipynb
+
+# Wandb logs
+wandb/
+**/wandb/
+
+# Mamba mod build artifacts
+mamba_mod/mamba_mod.egg-info/
+mamba_mod/__pycache__/

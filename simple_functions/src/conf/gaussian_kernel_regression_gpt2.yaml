@@ -1,0 +1,23 @@
+inherit:
+- base.yaml          # or base_mamba.yaml
+
+training:
+  task: gaussian_kernel_regression
+  task_kwargs:
+    n_centers: 20
+    bandwidth: 1.5
+    noise_std: 0
+    # center_fn: "linear"    # "linear" | "random" | "mlp"
+    # z_dim: 8
+  batch_size: 32
+  curriculum:
+    points:
+      start: 26
+      end: 101
+      inc: 5
+      interval: 2000
+
+out_dir: ../models/gaussian_kernel_regression
+
+wandb:
+  name: "gaussian_kernel_regression_gpt2"

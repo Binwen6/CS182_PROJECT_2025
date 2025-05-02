@@ -1,0 +1,25 @@
+inherit:
+- base_mamba.yaml          # or base_mamba.yaml
+
+training:
+  task: nonlinear_dynamics
+  lr_warmup_steps: 3000
+  grad_clip: 1.0
+  task_kwargs:
+    scale: 3.0
+    noise_std: 0.05
+  curriculum:
+    points:
+      start: 26
+      end: 101
+      inc: 5
+      interval: 4000
+    dims:
+      start: 5
+      end: 20
+      inc: 1
+      interval: 4000
+out_dir: ../models/nonlinear_dynamics
+
+wandb:
+  name: "nonlinear_dynamics_mamba_run_0"

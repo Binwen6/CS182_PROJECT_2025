@@ -1,0 +1,29 @@
+inherit:
+- base_mamba.yaml          # or base_mamba.yaml
+
+training:
+  task: gaussian_kernel_regression
+  lr_warmup_steps: 3000
+  grad_clip: 1.0
+  task_kwargs:
+    n_centers: 10
+    bandwidth: 0.5
+    noise_std: "auto"
+    # center_fn: "linear"    # "linear" | "random" | "mlp"
+    # z_dim: 8
+  batch_size: 64
+  curriculum:
+    points:
+      start: 26
+      end: 101
+      inc: 5
+      interval: 4000
+    dims:
+      start: 5
+      end: 20
+      inc: 1
+      interval: 4000
+out_dir: ../models/gaussian_kernel_regression
+
+wandb:
+  name: "gaussian_kernel_regression_mamba_run_0"
