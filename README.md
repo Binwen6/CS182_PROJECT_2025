@@ -8,6 +8,9 @@ This repository contains code for experiments on in-context learning using Mamba
 ## Code Structure
 ```
 .
+├── ICL_flash_attn/
+├── ICL_gpt2/
+├── ICL_hyena/
 ├── ICL_mamba/
 │ ├── imgs/ # Generated figures and plots
 │ ├── models/ # Saved model checkpoints and experiment outputs
@@ -18,13 +21,13 @@ This repository contains code for experiments on in-context learning using Mamba
 │ │ ├── ... # Other utilities and model/task definitions
 │ ├── requirements.txt # Python dependencies
 │ ├── environment_default.yml # Conda environment (default)
-│ ├── environment_droplet.yml # Conda environment (GPU/CUDA)
-│ └── LICENSE
+│ └── environment_droplet.yml # Conda environment (GPU/CUDA)
 ├── mamba_mod/ # Modified Mamba implementation (installable as a package)
 │ ├── mamba_mod/ # Source code for the Mamba model
 │ ├── setup.py
 │ └── README.md
-└── init.py
+├── init.py
+└── LICENSE
 ```
 
 ## Installation
