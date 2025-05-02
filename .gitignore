@@ -31,7 +31,6 @@ simple_functions/models/**/*.yaml
 # Experiment outputs
 simple_functions/imgs/
 simple_functions/src/__pycache__/
-simple_functions/src/*.ipynb
 
 # Wandb logs
 wandb/
