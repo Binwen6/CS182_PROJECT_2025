@@ -77,6 +77,7 @@ bash ICL_mamba/src/experiments.sh
 ### Evaluation
 
 To download the pretrained model checkpoints:
+- gpt2: https://drive.google.com/drive/folders/1hHV41ULayiBMROnXWwao0QRqB7AytEkl?usp=drive_link
 - Flash attention：https://drive.google.com/drive/folders/1tuWXcO4a1ysc5IPQdKOJ4qjnNyMhGEIl?usp=sharing
 - Hyena：https://drive.google.com/drive/folders/1ooZxblVUz6Bf0dj_DUd64FAgQJfdlx-A?usp=drive_link
 - Mamba：https://drive.google.com/file/d/1AaclHMwRryNxXCiyupcUwQKJy9-EhMiN/view?usp=sharing
