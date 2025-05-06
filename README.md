@@ -102,4 +102,4 @@ python eval.py <run_dir> <run_id> <n_test_points>
 
 ---
 
-**License:** See `ICL_mamba/LICENSE` for details.
+**License:** See `LICENSE` for details.
